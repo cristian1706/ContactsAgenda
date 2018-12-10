@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+
+                <include layout="@layout/addcontacttoolbar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout1"
+                android:id="@+id/relLayout3"
+                android:padding="25dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/contactImage"
+                    android:src="@drawable/ic_contact"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout3"
+                android:id="@+id/relLayout4"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_person"
+                    android:id="@+id/ivPerson"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivPerson"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etContactName"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout4"
+                android:id="@+id/relLayout5"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_phone"
+                android:id="@+id/ivPhone"
+                />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivPhone"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etContactPhone"
+                    android:layout_marginLeft="20dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/contacttype_options"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/ivPhone"
+                    android:id="@+id/selectContacttype"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignLeft="@+id/etContactPhone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout5"
+                android:id="@+id/relLayout6"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_email"
+                    android:id="@+id/ivEmail"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivEmail"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etContactEmail"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

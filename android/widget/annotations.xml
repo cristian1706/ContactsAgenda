@@ -1,0 +1,11 @@
+<root>
+    <item name='android.widget.LinearLayout'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+    <item name='android.widget.RelativeLayout'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+    <item name='android.widget.TextView'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
